@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - syakive</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="main-header">
+        <!-- Logo Website -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul class="flex h-[100%] items-center gap-[2px]">
+                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
+                <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
+                <li><a class="border p-[8px] rounded" href="#portfolio">Portfolio</a></li>
+                <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h1 class="text-[36px] font-bold">Welcome <span id="username"></span> to My Portfolio</h1>
+            <p class="text-[18px]">This is the home section of my portfolio website.</p>
+        </section>
+
+        <hr>
+
+        <!-- Profile Section -->
+        <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Profile</h2>
+            <p class="text-[18px]">This section contains my profile information.</p>
+        </section>
+
+        <hr>
+
+        <!-- Portfolio Section -->
+         
+        <section id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Portfolio</h2>
+            <p class="text-[18px]">This section showcases my projects and work.</p>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Section -->
+        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
+            <h2 class="text-[30px] font-bold">Message Us</h2>
+            <form>
+                <div class="mb-[10px]">
+                    <label for="name" class="block mb-[5px]">Name:</label>
+                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="email" class="block mb-[5px]">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-[8px] rounded w-[300px]" required>
+                </div>
+                <div class="mb-[10px]">
+                    <label for="message" class="block mb-[5px]">Message:</label>
+                    <textarea id="message" name="message" class="border p-[8px] rounded w-[300px] h-[100px]"
+                        required></textarea>
+                </div>
+                <button type="button" onclick="validateForm()"
+                    class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center p-[20px] bg-gray-200">© 2025 Yama's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
