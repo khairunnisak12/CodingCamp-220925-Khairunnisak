@@ -1,94 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - syakive</title>
-
-    <!-- CSS External -->
+    <title>Chacaa Website</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <!-- Header Content -->
-    <header class="main-header">
-        <!-- Logo Website -->
-        <div class="logo"></div>
 
-        <!-- Navigation Menu -->
-        <nav>
-            <ul class="flex h-[100%] items-center gap-[2px]">
-                <li><a class="border p-[8px] rounded" href="#home">Home</a></li>
-                <li><a class="border p-[8px] rounded" href="#profile">Profile</a></li>
-                <li><a class="border p-[8px] rounded" href="#portfolio">Portfolio</a></li>
-                <li><a class="border p-[8px] rounded" href="#message-us">Message Us</a></li>
-            </ul>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Chacaa Website Logo" class="logo-img">
+                <span>Chacaa Website</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#our-profile">Profile</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#message-us">Message Us</a>
+            </div>
         </nav>
     </header>
 
-    <hr>
-
-    <!-- Main Content -->
     <main>
-        <!-- Home Section -->
-        <section id="home" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h1 class="text-[36px] font-bold">Welcome <span id="username"></span> to My Portfolio</h1>
-            <p class="text-[18px]">This is the home section of my portfolio website.</p>
+        <section id="home" class="hero-section">
+            <h2 class="top-left-welcome">Hii <span id="user-name">Nisa</span>, Welcome To Website</h2>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Karya kecil untuk Jejak besar.<br>Code, <span class="highlight">Inspire.</span></h1>
+                    <div class="social-links">
+                        <hr>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-background-shape"></div>
+                    <img src="images/chapoto.png" alt="Foto Profil Anda">
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Profile Section -->
-        <section id="profile" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Profile</h2>
-            <p class="text-[18px]">This section contains my profile information.</p>
+        <section id="our-profile" class="content-section">
+            <div class="profile-header">
+                <h2>Profile</h2>
+                <p>I am a UI/UX designer</p>
+            </div>
+            <div class="profile-container">
+                <div class="profile-about">
+                    <h3>About me</h3>
+                    <p>I am a UI/UX Designer who transforms complex ideas into simple and user-friendly designs. 
+                        Through research and prototyping, I create digital products that balance user needs with 
+                        business goals to deliver meaningful impact.
+                    </p>
+                    <small>-Chacaa</small>
+                </div>
+                <div class="profile-picture">
+                    <img src="images/chapoto.png" alt="Foto Profil Anda">
+                </div>
+                <div class="profile-details">
+                    <h3>Details</h3>
+                    <p><strong>Name:</strong><br>Khairunnisak</p>
+                    <p><strong>Age:</strong><br>20 years</p>
+                    <p><strong>Location:</strong><br>Indonesia, Banda Aceh</p>
+                    <div class="profile-socials">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <hr>
-
-        <!-- Portfolio Section -->
-         
-        <section id="portfolio" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Portfolio</h2>
-            <p class="text-[18px]">This section showcases my projects and work.</p>
+        <section id="portfolio" class="content-section portfolio-section">
+            <div class="portfolio-header">
+                <h2>My Portfolio</h2>
+                <p>Beberapa Proyek Pilihan Saya</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Redesain Aplikasi FinTrack</h3>
+                    <p>Merancang ulang aplikasi mobile banking untuk meningkatkan keterlibatan pengguna dan menyederhanakan alur transaksi, berhasil meningkatkan kepuasan pengguna sebesar 30%.</p>
+                    <a href="#" class="learn-more">Lihat Studi Kasus →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Website E-commerce Natura</h3>
+                    <p>Mendesain dan meluncurkan situs e-commerce baru untuk merek produk perawatan kulit alami, menciptakan pengalaman berbelanja yang mewah, informatif, dan mudah.</p>
+                    <a href="#" class="learn-more">Lihat Studi Kasus →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>Aplikasi Galeri "Galleria"</h3>
+                    <p>Mendesain aplikasi mobile yang membantu fotografer mengelola dan membagikan karya mereka dengan alur kerja yang intuitif dari kamera hingga portofolio online.</p>
+                    <a href="#" class="learn-more">Lihat Studi Kasus →</a>
+                </div>
+            </div>
         </section>
-
-        <hr>
-
-        <!-- Message Us Section -->
-        <section id="message-us" class="min-h-[100vh] flex flex-col justify-center items-center gap-[20px]">
-            <h2 class="text-[30px] font-bold">Message Us</h2>
-            <form>
-                <div class="mb-[10px]">
-                    <label for="name" class="block mb-[5px]">Name:</label>
-                    <input type="text" id="name" name="name" class="border p-[8px] rounded w-[300px]" required>
+        
+        <section id="message-us" class="content-section">
+            <div class="message-us-header">
+                <h2>Message Us</h2>
+            </div>
+            <div class="form-container">
+                <form id="contact-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir</label>
+                        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki">
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..."></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="form-output">
+                    <h4>Your Message:</h4>
+                    <p><strong>Current time:</strong> <span id="current-time">-</span></p>
+                    <p><strong>Nama:</strong> <span id="output-name">-</span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="output-dob">-</span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="output-gender">-</span></p>
+                    <p><strong>Pesan:</strong> <span id="output-message">-</span></p>
                 </div>
-                <div class="mb-[10px]">
-                    <label for="email" class="block mb-[5px]">Email:</label>
-                    <input type="email" id="email" name="email" class="border p-[8px] rounded w-[300px]" required>
-                </div>
-                <div class="mb-[10px]">
-                    <label for="message" class="block mb-[5px]">Message:</label>
-                    <textarea id="message" name="message" class="border p-[8px] rounded w-[300px] h-[100px]"
-                        required></textarea>
-                </div>
-                <button type="button" onclick="validateForm()"
-                    class="bg-blue-500 text-white p-[10px] rounded hover:bg-blue-600">Send</button>
-            </form>
+            </div>
         </section>
     </main>
 
-    <!-- Footer Content -->
     <footer>
-        <p class="text-center p-[20px] bg-gray-200">© 2025 Yama's Portfolio. All rights reserved.</p>
+        <p>© 2025 Chacaa Portfolio. All rights reserved</p>
     </footer>
 
-    <!-- JavaScript External -->
     <script src="js/script.js"></script>
 </body>
-
 </html>
